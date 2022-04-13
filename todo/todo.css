@@ -1,0 +1,136 @@
+body {
+    background-color: rgba(102, 51, 153, 0.1);
+    font-family: Roboto Condensed;
+    position: relative;
+}
+
+.canvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.header {
+    background-color: rebeccapurple;
+    color: white;
+    display: flex;
+    width: 400px;
+    height: 40px;
+    padding: 4px 0px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+    position: relative;
+    box-shadow: 1px 1px 40px rgba(128, 128, 128, 0.6);
+}
+
+.container {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+}
+
+.todo-body {
+    box-shadow: 1px 1px 19px rgba(128, 128, 128, 0.9);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: relative;
+}
+
+.motiviation {
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.decor {
+    color: rebeccapurple;
+}
+
+.add-button {
+    position: absolute;
+    bottom: -22px;
+    color: white;
+    background-color: rebeccapurple;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 24px;
+    font-weight: bold;
+    box-shadow: 1px 1px 10px gray;
+    transition: opacity 0.1s;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    opacity: 0.9;
+}
+
+.title-row {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 14px;
+    color: black;
+}
+
+.date-row {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: black;
+}
+
+#todo-name {
+    outline: rebeccapurple;
+    border: 1px solid rebeccapurple;
+}
+
+#date-picker {
+    outline: rebeccapurple;
+    border: 1px solid rebeccapurple;
+    padding: 2px 33.5px;
+    font-size: 12px;
+    color: black;
+}
+
+.ct,
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 14px;
+}

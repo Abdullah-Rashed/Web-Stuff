@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah's Todo App</title>
+    <script src="todo.js">
+    </script>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="render()">
+    <div class="canvas">
+        <div class="container">
+            <div class="header">
+                <img class="todo-icon" src="icons8-todo-list-50.png" alt="">
+                <p class="title">Todo Website</p>
+            </div>
+            <div class="todo-body">
+                <div class="motiviation"> Get it <span class="decor">done!</span> </div>
+                <div class="title-row">
+                    <label for="todo-name">todo title</label>
+                    <input id="todo-name" type="text">
+                </div>
+                <div class="date-row">
+                    <label for="date-picker">todo date</label>
+                    <input type="date" id="date-picker">
+                </div>
+
+                <button class="add-button" onclick="addTodoButton()"> + Add Task</button>
+
+            </div>
+
+        </div>
+        <div class="list-container">
+            <div class="ct">Current Todos:</div>
+            <div class="todo-list" id="todo-list"></div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

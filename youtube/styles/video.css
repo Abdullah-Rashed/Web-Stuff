@@ -1,0 +1,147 @@
+.thumbnail {
+    width: 100%;
+}
+
+.video-preview {
+    cursor: pointer;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+}
+
+.channel-pic {
+    width: 42px;
+    vertical-align: top;
+    position: relative;
+}
+
+.video-info {
+    width: 200px;
+    margin-left: 10px;
+}
+
+.profile-pic {
+    width: 42px;
+    border-radius: 50px;
+}
+
+.video-title {
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-bottom: 10px;
+    width: 240px;
+    max-width: 220px;
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-author,
+.video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.video-author {
+    margin-bottom: 4px;
+}
+
+.videos-grid {
+    display: grid;
+    column-gap: 16px;
+    row-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width:400px) {
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 450px) and (max-width:750px) {
+    .videos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 1000px) {
+    .videos-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1001px) {
+    .videos-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .video-title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .video-author,
+    .video-stats {
+        font-size: 14px;
+    }
+}
+
+.time {
+    font-size: 12px;
+    padding: 4px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    border-radius: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.channel-tooltip {
+    padding: 10px;
+    position: absolute;
+    bottom: -30px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(200, 200, 200, 0.6);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    line-height: 18px;
+    transition: opacity 0.2s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+creator-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-count {
+    font-size: 12px;
+    margin-left: 8px;
+    color: gray;
+}
+
+.creator {
+    font-weight: bold;
+    flex: 1;
+    margin-left: 8px;
+    font-size: 14pxs;
+}
+
+.channel-pic:hover .channel-tooltip {
+    opacity: 1;
+}
